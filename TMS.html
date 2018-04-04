@@ -1,0 +1,235 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name ="keywords" content="TMS, GT TMS, 运输管理系统, 亮才TMS, 可视化运输, 分模式调度, 车队管理, 报表中心, 亮才商务咨询">
+    <meta name="description" content="您是否渴望有一套简单易用的运输管理系统，帮您管理运输全程、控制运输成本、可视化运输在途、提高上下游的协同合作？
+      亮才TMS， 您的下一个选择！">
+    <title>亮才－运输管理系统TMS</title>
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css"/>
+	<link href="video-js/video-js.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/liangcai-main.css">
+    <style>
+        #client_area>div>div{
+            margin-bottom: 5px;
+        }
+    </style>
+
+	<script src="video-js/video.min.js"></script>
+	<script>
+	videojs.options.flash.swf = "video-js/video-js.swf";
+	</script>
+
+    <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main-format.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#solutions_carousel').carousel({
+                interval: 5000
+            });
+            drawWarehouseMapChart();
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <div id="header_img_area" class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 0;">
+            <a><div id="header_reservation_btn" data-toggle="modal" data-target="#modal_reservation">免费试用</div></a>
+            <img src="./images/website_bg2.jpg" alt="TMS运输管理系统">
+            <div class="header-carousel-des"><p>智慧运输，如云随行</p></div>
+        </div>
+    </div>
+
+	<div id="orgnazation_area" class="row">
+		<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+			<div id="orgnazation_title" class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h2>产品介绍</h2>
+				</div>
+			</div>
+				<div class="col-lg-12 col-md-12 col-sm-12" align="center">
+					<video id="video_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="none" width="640" height="360" data-setup="{}">
+                        <source src="http://www.weikayun.com/video/TMS.mp4" type="video/mp4">
+					</video>
+				</div>
+        </div>
+    </div>
+
+    <div id="visualization_area" class="row box-background-image">
+        <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-lg-2 col-md-2 col-sm-2 img-col">
+            <img class="visualization_img" src="./images/TMS/pic_1.png" alt="数字物流解决方案" />
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-7">
+                <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+				<img class="visualization_img" src="./images/TMS/pic_2.png" alt="亮才数字化物流-无纸化,自动化,协同化,智能化" />
+                </div>
+            <div id="cloud_content" class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div id="production_area" class="row box-background-image">
+        <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+            <div id="production_title" class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h2>产品特色</h2>
+				</div>
+			</div>
+			<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<img class="production-img" src="./images/TMS/pic_5.png" alt="运输环节全透明-实时追踪，卓越服务" />
+					<p>&nbsp; </p>
+					<div class="col-lg-offset-w col-md-offset-2 col-sm-offset-2 col-lg-10 col-md-10 col-sm-10">
+					<div class="production-font">
+					<p>●&nbsp;&nbsp;首创微信应用，</p><p>&nbsp;&nbsp;&nbsp;&nbsp;轻松掌握物流环节</p>
+					<p>●&nbsp;&nbsp;8大追踪方案，</p><p>&nbsp;&nbsp;&nbsp;&nbsp;总有一款适合您</p>
+					<p>●&nbsp;&nbsp;5种连接方式，</p><p>&nbsp;&nbsp;&nbsp;&nbsp;汇聚物流大数据</p>
+					</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<img class="production-img" src="./images/TMS/pic_4.png" alt="运营数据极精准-丰富数据，洞见利润" />
+					<p>&nbsp; </p>
+					<div class="col-lg-offset-w col-md-offset-2 col-sm-offset-2 col-lg-10 col-md-10 col-sm-10">
+					<div class="production-font">
+					<p>●&nbsp;&nbsp;独特价格试图，</p><p>&nbsp;&nbsp;&nbsp;&nbsp;计费模式一网打尽</p>
+					<p>●&nbsp;&nbsp;利润中心导向，</p><p>&nbsp;&nbsp;&nbsp;&nbsp;分析决策快人一步</p>
+					<p>●&nbsp;&nbsp;在线运营报表，</p><p>&nbsp;&nbsp;&nbsp;&nbsp;实时掌握业务动向</p>
+					</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4">
+					<img class="production-img" src="./images/TMS/pic_3.png" alt="快速响应易操作-规则驱动，轻松上手" />
+					<p>&nbsp; </p>
+					<div class="col-lg-offset-w col-md-offset-2 col-sm-offset-2 col-lg-10 col-md-10 col-sm-10">
+					<div class="production-font">
+					<p>●&nbsp;&nbsp;丰富规则引擎，</p><p>&nbsp;&nbsp;&nbsp;&nbsp;极强的业务适配性</p>
+					<p>●&nbsp;&nbsp;多样订单接入，</p><p>&nbsp;&nbsp;&nbsp;&nbsp;实施低成本高效率</p>
+					<p>●&nbsp;&nbsp;实施经验丰富，</p><p>&nbsp;&nbsp;&nbsp;&nbsp;先验证再持续改进</p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="solutions_area" class="row box-background-image">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div id="solutions_title" class="row">
+                <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-lg-8 col-md-8 col-sm-8">
+                    <h2>客户成功案例 Solutions</h2>
+                </div>
+            </div>
+            <div id="solutions_content" class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12" style="padding: 0;">
+                    <div id="solutions_carousel" class="carousel slide">
+                        <!-- 轮播（Carousel）指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#solutions_carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#solutions_carousel" data-slide-to="1"></li>
+                        </ol>
+                        <!-- 轮播（Carousel）项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5"  align="center">
+                                        <div class="solution-box">
+                                            <div class="solution-img img-col"><a href="TMS-Client.html#axalta"><img src="./images/client/pic_0.jpg" alt="Axalta艾仕得" /></a></div>
+                                            <div class="solution-des" align="left">
+                                                <p>&nbsp;</p>
+                                                <p>“亮才TMS强大的规则引擎，实现了从ERP订单接收、派单、承运商确认、异常监控、
+                                                    费用结算和业务报表等整个过程的自动化，从而大大提高了管理效率。”</p>
+                                                <p style="text-align: right;"> – 艾仕得中国区物流总监 吴钧</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5"  align="center">
+                                        <div class="solution-box">
+                                            <div class="solution-img img-col"><a href="TMS-Client.html#kuka"><img src="./images/client/pic_3.jpg" alt="Kuka顾家家居" /></a></div>
+                                            <div class="solution-des" align="left">
+                                                <p>&nbsp;</p>
+                                                <p>“传统的SaaS系统通常不支持定制化服务，但是亮才TMS能够根据顾家的个性化需求，灵活的进行产品配置，
+                                                    提供了一套为大票零担度身定制的解决方案。”</p>
+                                                <p style="text-align: right;"> – 顾家供应链副总监 周良</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5"  align="center">
+                                        <div class="solution-box">
+                                            <div class="solution-img img-col"><a href="TMS-Client.html#cls"><img src="./images/client/pic_4.jpg" alt="浙江长运物流" /></a></div>
+                                            <div class="solution-des" align="left">
+                                                <p>&nbsp;</p>
+                                                <p>“亮才TMS的计价体系是他的强项，可以做到分段、分量、分线、分件，甚至是价格优惠、百分比，
+                                                    只要你能想到的，这套系统都够做到。”</p>
+                                                <p style="text-align: right;"> – 长运物流副总经理 王奕</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 col-sm-5"  align="center">
+                                        <div class="solution-box">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<div id="client_area" class="row box-background-image">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <div id="client_title" class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h2>我们的客户</h2>
+				</div>
+			</div>
+			<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_1.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_2.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_3.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_4.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_5.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_6.png" /></div>
+			</div>
+			<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_7.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_8.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_9.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_10.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_11.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_12.png" /></div>
+			</div>
+			<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_13.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_14.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_15.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_16.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_17.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_18.png" /></div>
+			</div>
+			<div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+				<div class="col-lg-2 col-md-2 col-sm-2"></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_19.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_20.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_21.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"><img class="production-company" src="./images/TMS/C_22.png" /></div>
+				<div class="col-lg-2 col-md-2 col-sm-2"></div>
+			</div>
+        </div>
+    </div>
+
+    <div id="contact_area" class="row"></div>
+</div>
+</body>
+</html>
